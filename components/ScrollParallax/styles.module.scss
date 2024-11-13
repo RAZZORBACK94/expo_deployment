@@ -1,0 +1,43 @@
+/* Spacer to push scroll parallax down */
+.spacer {
+    height: 100vh; /* Space to push ScrollParallax down */
+}
+
+/* Gallery section containing scroll parallax effect */
+.gallery {
+    height: 175vh; /* Adjust as necessary for scroll effect */
+    overflow: hidden;
+    background: rgb(45, 45, 45);
+
+    .galleryWrapper {
+        position: relative;
+        top: 0; /* Adjust to remove unnecessary shift */
+        height: auto; /* Adjust to auto if it should scale with content */
+        display: flex;
+        gap: 2vw;
+        padding: 2vw;
+    }
+
+    .column {
+        position: relative;
+        height: 100%;
+        width: 25%;
+        min-width: 250px;
+        display: flex;
+        flex-direction: column;
+        gap: 2vw;
+        white-space: nowrap;
+
+        .imageContainer {
+            position: relative;
+            height: 33%;
+            width: 100%;
+            border-radius: 1vw;
+            overflow: hidden;
+
+            img {
+                object-fit: cover;
+            }
+        }
+    }
+}
